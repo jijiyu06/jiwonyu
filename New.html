@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+
+    <style type="text/css">
+        body {
+            background-image: url("week1 Background Removed.png");
+            background-size: cover;
+            background-color: whitesmoke;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    overflow-y: hidden; 
+        }
+
+        .yellow-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 150%;
+            transform: translate(-8%, -4.4%);
+            opacity: 1; 
+            z-index: 2; 
+        }
+
+        .lamp-image {
+            position: absolute;
+            top: 200px; 
+            left: 450px; 
+            max-width: 700px; 
+            z-index: 3;
+            opacity: 200%;
+        }
+
+        .column-image {
+            position: absolute;
+            top: -15px; 
+            left: 1800px; 
+            max-width: 1300px; 
+            z-index: 2; 
+        }
+
+        .ezel-image {
+            position: absolute;
+            top: 80%; 
+            left: 50%; 
+            transform: translate(-90%, -90%);
+            max-width: 600px; 
+            z-index: 3; 
+        }
+
+        .ezel2-image {
+            position: absolute;
+            top: 450px; 
+            left: 150px; 
+            max-width: 600px; 
+            z-index: 1; 
+        }
+
+        .door1-image {
+            position: absolute;
+            top: 85px; 
+            left: 2690px; 
+            max-width: 1300px; 
+            opacity: 100%;
+            z-index: 2; 
+        }
+
+        .exitdoor-image {
+            position: absolute;
+            top: 99px; 
+            left: -490px;
+            max-width: 1000px; 
+            z-index: 2; 
+        }
+
+        .background2-image {
+            position: absolute;
+            top: 0; 
+            left: 30; 
+            width: 100%; 
+            height: 100%; 
+            opacity: 50%; 
+            transform: translate(-32%, 12%);
+            z-index: 1; 
+        }
+
+        .yellow-image {
+           position: absolute;
+           top: 660px; 
+            left: 1375px; 
+           transform: translate(525px,500px);
+            rotate: 180deg;
+            z-index: 1; 
+            opacity: 90%;
+            max-width: 1850px;
+        }
+
+        .yellow2-image {
+           position: absolute;
+           top: 10px; 
+            left: 1400px; 
+        
+            z-index: 0; 
+            opacity: 90%;
+            width: 1550px;
+        }
+
+         .pattern1-image {
+            position: absolute;
+            top: 530px; 
+            left: 3380px;
+            max-width: 1000px; 
+            z-index: 4; 
+            opacity: 70%;
+            rotate: 180deg;
+        }
+
+        .pattern2-image {
+            position: absolute;      
+            top: 200px;
+            left: 3000px;
+            max-width: 700px;
+            z-index: 1;
+            opacity: 100%;
+        }
+
+        .pattern3-image {
+            position: absolute;      
+            top: 20px;
+            left: 3000px;
+             transform: translate(1000px,500px);
+            max-width: 1000px;
+            z-index: 1;
+            opacity: 100%;
+        }
+
+        .pattern4-image {
+            position: absolute;      
+            top: 20px;
+            left: 4000px;
+            transform: translate(1000px,500px);
+            width: 2000x;
+            z-index: 1;
+            opacity: 100%;
+        }
+
+        .pattern5-image {
+            position: absolute;
+            top: 195px; 
+            left: 1250px; 
+            transform: translate(1000px,500px);
+            max-width: 1100px;
+            z-index: 1;
+            opacity: 100%;
+        }
+
+        .pattern6-image {
+            position: absolute;
+            top: 195px; 
+            left: 1250px; 
+            max-width: 1100px;
+            z-index: 1;
+            opacity: 80%;
+        }
+
+         .lines1-image {
+            position: absolute;      
+            top: 20;
+            left: 80;
+            transform: translate(50%, 30%);
+            max-width: 300px;
+            z-index: 3;
+            opacity: 100%;
+        }
+
+        .column2-image {
+            position: absolute;
+            top: -28px; 
+            left:1350px; 
+            max-width: 1000px; 
+            z-index: 2; 
+        }
+
+        .wire-image {
+            position: absolute;
+            top: -28px; 
+            left:440px; 
+            max-width: 1000px; 
+            z-index: 3; 
+            opacity: 100%;
+        }
+
+        .pattern5-image {
+            position: absolute;
+            top: -510px; 
+            left:2520px; 
+            max-width: 1150px; 
+            z-index: 4;
+            opacity: 0%; 
+        }
+
+        .bottles-image {
+           position: absolute;
+            top: 350px; 
+            left: 1250px; 
+            max-width: 700px; 
+            z-index: 2; 
+            opacity: 100%;
+            z-index: 3;  
+        }
+
+        .right-image {
+           position: absolute;
+            top: -20px; 
+            left: 4700px; 
+            width: 1400px; 
+            z-index: -2; 
+            opacity: 80%;
+            rotate: 180%;
+        }
+
+        .right2-image {
+           position: absolute;
+            top: 400px; 
+            left: 5200px; 
+            width: 700px; 
+            z-index: 4; 
+            opacity: 80%;
+            rotate: 180%;
+        }
+
+        .week6-image {
+           position: absolute;
+            top: 100px; 
+            left: 2180px; 
+            width: 700px; 
+            z-index: -2; 
+            opacity: 50%;
+        }  
+
+        .week4-image {
+            position: absolute;
+            top: 170px; 
+            left: 800px;
+            z-index: -2; 
+            opacity: 20%;
+            width: 1300px; 
+        }
+
+        .table-image {
+            position: absolute;
+            top: 240px; 
+            left:1900px; 
+            width: 800px; 
+            z-index: 0; 
+            opacity: 100%;
+        }
+
+        .gori2-image {
+            position: absolute;
+            top: -20px; 
+            left:3360px; 
+            max-width: 800px; 
+            z-index: 0; 
+            opacity: 100%;
+        }
+
+        .bottle2-image {
+           position: absolute;
+            top: 230px; 
+            left: 1230px; 
+            max-width: 700px; 
+            z-index: 2; 
+            opacity: 80%;
+            z-index: 2;  
+        }
+
+        .gori-image {
+            position: absolute;
+            top: 100px; 
+            left: 2800px;
+            max-width: 1000px; 
+            z-index: 4;
+        }
+
+        .manequin-image {
+            position: absolute;
+            top: 220px; 
+            left: 2500px; 
+            width: 300px; 
+            z-index: 3; 
+        }
+
+        .manequin2-image {
+            position: absolute;
+            top: -200px; 
+            left: 2100px; 
+            width: 1000px; 
+            z-index: 3; 
+            opacity: 90%;
+        }
+
+        .model-image {
+            position: absolute;
+            top: -200px; 
+            left: 4700px; 
+            width: 1700px; 
+            z-index: 3; 
+        }
+
+        .week3-image {
+           position: absolute;
+            top: 100px; 
+            left: 2700px; 
+            width: 1000px; 
+            z-index: -2; 
+            opacity: 50%;
+        }  
+
+         .lamp-light {
+            position: absolute;
+            top: 260px; 
+            left: 635px; 
+            max-width: 240px; 
+            z-index: 2;
+            opacity: 200%;
+            rotate: 310deg;
+        }
+
+        .week5-image {
+           position: absolute;
+            top: -60px; 
+            left: 3550px; 
+           width: 1000px; 
+            z-index: -3; 
+            opacity: 80%;
+        }  
+
+        .ezels-image {
+           position: absolute;
+            top: 400px; 
+            left: 4150px; 
+           width: 800px; 
+            z-index: 7; 
+            opacity: 100%;
+        }  
+
+        .ezels2-image {
+            position: absolute;
+            top: 300px; 
+            left:3600px; 
+            width: 300px; 
+            z-index: 1; 
+            opacity: 100%;
+        }
+
+
+        .table2-image {
+            position: absolute;
+            top: 100px; 
+            left:4350px; 
+            width: 1000px; 
+            z-index: 1; 
+            opacity: 0%;
+        }
+
+
+        .abstract-image {
+           position: absolute;
+            top: -60px; 
+            left: 3000px; 
+           width: 1000px; 
+            z-index: -5; 
+            opacity: 100%;
+        }  
+         .abstract2-image {
+           position: absolute;
+            top: -60px; 
+            left: 4000px; 
+           width: 2000px; 
+            z-index: -5; 
+            opacity: 100%;
+        }  
+
+        .liness {
+           position: absolute;
+            top: -60px; 
+            left: 200px; 
+           width: 1000px; 
+            z-index: -5; 
+            opacity: 100%;
+        }  
+
+    </style>
+</head>
+<body>
+
+    <img src="images2/yellowbackground.png" alt="Yellow Background" class="yellow-background">
+    <img src="images2/background2.png" alt="Background 2" class="background2-image">
+    <img src="images2/lamp1.png" alt="Lamp Image" class="lamp-image">
+    <img src="images2/column1.png" alt="Column Image" class="column-image">
+    <img src="images2/ezel1.png" alt="Ezel Image" class="ezel-image">
+    <img src="images2/ezel2.png" alt="Second Ezel Image" class="ezel2-image">
+    <img src="images2/gori.png" alt="Gori Image" class="gori-image">
+    <img src="images2/door1.png" alt="Door Image" class="door1-image">
+    <img src="images2/exitdoor.png" alt="Exit Door Image" class="exitdoor-image">
+    <img src="images2/manequin.png" alt="Manequin Image" class="manequin-image">
+    <img src="images2/manequin2.png" alt="Manequin2 Image" class="manequin2-image">
+    <img src="images2/model.png" alt="Model Image" class="model-image">
+    <img src="images2/yellow.png" alt="Yellow Image" class="yellow-image">
+    <img src="images2/yellow2.png" alt="Yellow2 Image" class="yellow2-image">
+    <img src="images2/pattern1.png" alt="Pattern 1" class="pattern1-image">
+    <img src="images2/pattern2.png" alt="Pattern 2" class="pattern2-image">
+    <img src="images2/pattern3.png" alt="Pattern 3" class="pattern3-image">
+    <img src="images2/pattern4.png" alt="Pattern 4" class="pattern4-image">
+    <img src="images2/lines1.png" alt="lines 1" class="lines1-image">
+    <img src="images2/column2.png" alt="Column 2" class="column2-image">
+    <img src="images2/wire.png" alt="Wire" class="Wire-image">
+    <img src="Images/lamp-light.png" alt="Lamp Light" class="lamp-light">
+    <img src="images2/pattern5.png" alt="Pattern 5" class="pattern5-image">
+    <img src="images2/pattern6.png" alt="Pattern 6" class="pattern6-image">
+    <img src="images2/pattern6.png" alt="Pattern 6" class="pattern6-image">
+    <img src="images2/right.png" alt="Right" class="right-image">
+    <img src="images2/right2.png" alt="Right2" class="right2-image">
+    <img src="images2/bottles.png" alt="Bottles" class="bottles-image">
+    <img src="images2/week4.png" alt="Week 4" class="week4-image">
+    <img src="images2/week6.png" alt="Week6" class="week6-image">
+    <img src="images2/table.png" alt="Table" class="table-image">
+    <img src="images2/table2.png" alt="Table2" class="table2-image">
+    <img src="images2/gori2.png" alt="Gori2 Image" class="gori2-image">
+    <img src="images2/bottle2.png" alt="Bottle2" class="bottle2-image">
+    <img src="images2/week3.png" alt="Week3" class="week3-image">
+
+    <img src="images2/week5.png" alt="Week5" class="week5-image">
+    <img src="images2/ezels.png" alt="Ezels Image" class="ezels-image">
+    <img src="images2/ezels2.png" alt="Ezels2 Image" class="ezels2-image">
+    <img src="images2/abstract.png" alt="Abstract Image" class="abstract-image">
+    <img src="images2/abstract2.png" alt="Abstract2 Image" class="abstract2-image">
+    <img src="images2/liness.png" alt="Liness Image" class="liness-image">
+   
+
+ <script type="text/javascript" src="jquery.lazy.min.js"></script>
+                
+
+
+<script>
+    const maxScrollLeft = 4500;
+
+    function handleScroll() {
+        const currentScrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+        if (currentScrollLeft > maxScrollLeft) {
+            window.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+</script>
+
+<script>
+    const lampImage = document.querySelector(".lamp-image");
+    const lampLightImage = document.querySelector(".lamp-light");
+    let isLampOn = false; 
+    
+    lampLightImage.style.display = "none";
+
+    lampImage.addEventListener("click", () => {
+        isLampOn = !isLampOn; 
+
+        if (isLampOn) {
+        
+            lampLightImage.style.display = "block"; 
+            document.body.style.backgroundColor = "black"; 
+        } else {
+            lampLightImage.style.display = "none"; 
+            document.body.style.backgroundColor = "whitesmoke"; 
+        }
+    });
+
+  const yellowBackground = document.querySelector(".yellow-background");
+    let isDarkYellow = false; // Initial state
+
+    yellowBackground.addEventListener("click", () => {
+        if (isDarkYellow) {
+            document.body.style.backgroundColor = "white"; // Change to white
+        } else {
+            document.body.style.backgroundColor = "#FFD700"; // Change to dark yellow
+        }
+        isDarkYellow = !isDarkYellow; // Toggle state
+    });
+
+</script>
+
+
+
+
+</body>
+</html>
